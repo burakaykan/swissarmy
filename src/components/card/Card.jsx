@@ -47,6 +47,7 @@ export default class Card extends Component {
                     : "Europe Street beat"
                 }
                 round="25px"
+                onClick={() => window.open(this.props.cardInfo.url, '_blank')}
               />
             }
             key={this.props.cardInfo.id}

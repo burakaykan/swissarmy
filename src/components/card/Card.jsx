@@ -4,9 +4,12 @@ import Avatar, { ConfigProvider } from "react-avatar";
 import Rater from "react-rater";
 import "react-rater/lib/react-rater.css";
 
+
+
 const ratingChanged = (newRating) => {
   console.log(newRating)
 }
+
 
 export default class Card extends Component {
   render() {
@@ -31,24 +34,22 @@ export default class Card extends Component {
               <Icon type="github" />
             ]}
             cover={
-              // <img
-              //   alt={this.props.cardInfo.alt ? this.props.cardInfo.alt : "altMessage"}
-              //   src={
-              //     this.props.cardInfo.img
-              //       ? this.props.cardInfo.img
-              //       : "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
-              //   }
-              // />
-              <Avatar
-                size="250"
-                name={
-                  this.props.cardInfo.title
-                    ? this.props.cardInfo.title
-                    : "Europe Street beat"
-                }
-                round="25px"
+              <img
+                alt={this.props.cardInfo.alt ? this.props.cardInfo.alt : "altMessage"}
+                src={this.props.cardInfo.src}
+                style={{borderRadius: 25}}
                 onClick={() => window.open(this.props.cardInfo.url, '_blank')}
               />
+              // <Avatar
+              //   size="250"
+              //   name={
+              //     this.props.cardInfo.title
+              //       ? this.props.cardInfo.title
+              //       : "Europe Street beat"
+              //   }
+              //   round="25px"
+              //   onClick={() => window.open(this.props.cardInfo.url, '_blank')}
+              // />
             }
             key={this.props.cardInfo.id}
           >

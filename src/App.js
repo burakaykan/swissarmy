@@ -4,6 +4,8 @@ import { Animate, AnimateKeyframes, AnimateGroup } from "react-simple-animate";
 import "./App.css";
 import Card from "./components/card/Card";
 
+
+
 function App() {
   let cardInfo = [
     {
@@ -11,63 +13,72 @@ function App() {
       alt: "alt",
       title: "Coolors",
       desc: "The super fast color schemes generator!",
-      url: "https://coolors.co/"
+      url: "https://coolors.co/",
+      src: "https://source.unsplash.com/random/250x250"
     },
     {
       id: 2,
       alt: "alt",
       title: "BUNDLEPHOBIA",
       desc: "find the cost of adding a npm package to your bundle",
-      url: "https://bundlephobia.com/"
+      url: "https://bundlephobia.com/",
+      src: "https://source.unsplash.com/random/250x250"
     },
     {
       id: 3,
       alt: "alt",
       title: "Releasly",
       desc: "Be notified on new open-source version releases directly to your e-mail.",
-      url: "https://www.releasly.co/"
+      url: "https://www.releasly.co/",
+      src: "https://source.unsplash.com/random/250x250"
     },
     {
       id: 4,
       alt: "alt",
       title: "carbon",
       desc: "Create and share beautiful images of your source code. Start typing or drop a file into the text area to get started.",
-      url: "https://carbon.now.sh/"
+      url: "https://carbon.now.sh/",
+      src: "https://source.unsplash.com/random/250x250"
     },
     {
       id: 5,
       alt: "alt",
       title: "snippet generator",
       desc: "Snippet generator is a tiny React app to help you create Visual Studio Code, Sublime Text and Atom snippets.",
-      url: "https://snippet-generator.app/"
+      url: "https://snippet-generator.app/",
+      src: "https://source.unsplash.com/random/250x250"
     },
     {
       id: 6,
       alt: "alt",
       title: "Rico's cheatsheets",
       desc: "Devhints — TL;DR for developer documentation",
-      url: "https://devhints.io/"
+      url: "https://devhints.io/",
+      src: "https://source.unsplash.com/random/250x250"
     },
     {
       id: 2,
       alt: "alt",
       title: "BUNDLEPHOBIA",
       desc: "find the cost of adding a npm package to your bundle",
-      url: "https://bundlephobia.com/"
+      url: "https://bundlephobia.com/",
+      src: "https://source.unsplash.com/random/250x250"
     },
     {
       id: 2,
       alt: "alt",
       title: "BUNDLEPHOBIA",
       desc: "find the cost of adding a npm package to your bundle",
-      url: "https://bundlephobia.com/"
+      url: "https://bundlephobia.com/",
+      src: "https://source.unsplash.com/random/250x250"
     },
     {
       id: 2,
       alt: "alt",
       title: "BUNDLEPHOBIA",
       desc: "find the cost of adding a npm package to your bundle",
-      url: "https://bundlephobia.com/"
+      url: "https://bundlephobia.com/",
+      src: "https://source.unsplash.com/random/250x250"
     },
   ];
   return (

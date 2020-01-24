@@ -28,14 +28,14 @@ export default class Card extends Component {
         >
           <AntCard
             hoverable={true}
-            style={{ width: 250, borderRadius: 25 }}
+            style={{ width: 250, borderRadius: 25, height: 250 }}
             actions={[
               <Rater total={1} rating={1} interactive={1} onChange={ratingChanged}/>,
               <Icon type="github" />
             ]}
             cover={
               <img
-                alt={this.props.cardInfo.alt ? this.props.cardInfo.alt : "altMessage"}
+                alt={this.props.cardInfo.alt ?? "altMessage"}
                 src={this.props.cardInfo.src}
                 style={{borderRadius: 25}}
                 onClick={() => window.open(this.props.cardInfo.url, '_blank')}
@@ -56,8 +56,7 @@ export default class Card extends Component {
             <AntCard.Meta
               title={
                 this.props.cardInfo.title
-                  ? this.props.cardInfo.title
-                  : "Europe Street beat"
+                  ?? "Europe Street beat"
               }
               description={
                 this.props.cardInfo.desc
